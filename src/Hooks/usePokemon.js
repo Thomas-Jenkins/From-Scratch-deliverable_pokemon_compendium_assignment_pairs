@@ -3,14 +3,14 @@ import { useState, useEffect } from 'react';
 
 
 export default function usePokemon() {
-  const [pokemon, setPokemon] = useState('');
+  const [pokemonList, setPokemonList] = useState([]);
 
 
   useEffect(() => {
     const loadData = async () => {
       try {
         const data = await fetchPokemon();
-        setPokemon(data);
+        setPokemonList(data);
       } catch (e) {
     // eslint-disable-next-line no-console
         console.error(e);
@@ -19,5 +19,5 @@ export default function usePokemon() {
   
     loadData();
   }, []);
-  return { pokemon };
+  return { pokemonList };
 }
