@@ -18,7 +18,7 @@ export default function Main() {
     <>
       <Select typeList={typeList} setType={setType} />
       {pokemonList.map((aPokemon) => (
-        <Pokemon key={aPokemon.id} pokemon={aPokemon.pokemon} url_image={aPokemon.url_image} />
+        <Pokemon key={aPokemon.id} { ...aPokemon } />
       ))} 
     </>
   );
