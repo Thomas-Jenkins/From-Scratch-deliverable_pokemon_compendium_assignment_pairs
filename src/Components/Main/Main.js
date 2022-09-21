@@ -1,17 +1,14 @@
 import { useEffect, useState } from 'react';
 import usePokemon from '../../Hooks/usePokemon';
-import { fetchPokemon } from '../../services/fetch-utils';
+import { fetchPokemon, fetchPokeTypes } from '../../services/fetch-utils';
 import useFilter from '../Filter/Filter';
 import Pokemon from '../Pokemon/Pokemon';
 import Select from '../Select/Select';
 
 
-
-
 export default function Main() {
-  const { pokemonList } = usePokemon();
-  const { type, typeList, setType } = useFilter();
-  console.log('temp1', typeList);
+  const { pokemonList, type, typeList, setType } = usePokemon();
+  console.log('temp1', pokemonList);
 //   let temp = usePokemon();
   // {pokemonList.map((aPokemon) => 
   //   console.log(aPokemon)
