@@ -10,8 +10,8 @@
 .nav {
   display: flex;
   justify-content: space-around;
-  
 }
+
 .nav input {
   height: 40px;
 }
@@ -19,6 +19,7 @@
 .nav button {
   height: 40px;
 }
+
 .nav select {
   margin: 1px;
   height: 40px;
