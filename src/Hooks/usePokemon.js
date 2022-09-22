@@ -7,13 +7,9 @@ export default function usePokemon() {
   const [typeList, setTypeList] = useState([]);
   const [loading, setLoading] = useState(true);
   const [inputValue, setInputValue] = useState('');
-  const [nameFilter, setNameFilter] = useState('');
-
   useEffect(() => {
-    
     const loadData = async () => {
       try {
-        // setLoading(true);
         const data = await fetchPokemon(type);
         setPokemonList(data);
         setLoading(false);
@@ -22,22 +18,21 @@ export default function usePokemon() {
         console.error(e);
       }
     };
-      
     loadData();
-    
   }, [type]);
-  
+
   useEffect(() => {
     const getData = async () => {
       try {
         const data = await fetchPokeTypes();
         setTypeList(data);
       } catch (e) {
+        // eslint-disable-next-line no-console
         console.error(e);
       }
     };  
     getData();
-
   }, []); 
-  return { pokemonList, setPokemonList, type, typeList, setType, loading, inputValue, setInputValue, nameFilter, setNameFilter };
+
+  return { pokemonList, setPokemonList, type, typeList, setType, loading, inputValue, setInputValue };
 }
