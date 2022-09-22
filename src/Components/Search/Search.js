@@ -1,12 +1,12 @@
 import { fetchPokemon } from '../../services/fetch-utils';
+import './Search.css';
 
 export default function SearchPokemon({ inputValue, setInputValue, setPokemonList, type }) {
   return (
-    <>
+    <div className='search'>
       <label>Search by Name</label>  
       <input onChange={(e) => setInputValue(e.target.value)}></input>
       <button onClick={ async () => {
-        console.log('fetchpokemans: ', fetchPokemon(type));
         if (inputValue === '') {
           setPokemonList(await fetchPokemon(type));
         }
@@ -15,7 +15,7 @@ export default function SearchPokemon({ inputValue, setInputValue, setPokemonLis
         setPokemonList(data.results);
 
       }}>Search</button>
-    </>
+    </div>
   );
 }
 

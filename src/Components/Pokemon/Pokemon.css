@@ -1,16 +1,27 @@
 .poke-card {
-    border: 1px solid black;
-    width: 75px;
+    /* border: 1px solid black; */
+    width: 120px;
     margin: 5px;
     border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
     
 }
 .poke-card img {
-    max-width: 50px;
+    max-width: 100px;
 }
 .title {
-    font-size: x-small;
+  font-size: small;  
+  text-transform: uppercase;
 }
+
+.type {
+  text-transform: capitalize;
+  margin-bottom: 5px;
+}
+
 .bug {
     background-color: lightgreen;
 }
@@ -48,7 +59,7 @@
     background-color: lightblue;
 }
 .normal {
-    background-color: white;
+    background-color: rgb(250, 239, 239);
 }
 .poison {
     background-color: darkviolet;

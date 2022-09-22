@@ -1,8 +1,6 @@
-/* .App {
-  text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-} */
+.App {
+  min-width: 700px;
+}
 
 .App-logo {
   height: 40vmin;
