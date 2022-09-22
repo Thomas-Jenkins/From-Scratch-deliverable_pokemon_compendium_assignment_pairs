@@ -17,12 +17,16 @@ export default function Main() {
   //   // <Pokemon key={aPokemon.id} pokemon={pokemon} url_image={url_image} />
   // );}
   return (
-    <>
-      <Select typeList={typeList} setType={setType} />
-      {pokemonList.map((aPokemon) => (
-        <Pokemon key={aPokemon.id} { ...aPokemon } />
-      ))} 
-    </>
+    <div className='main'>
+      <div className="nav">
+        <Select typeList={typeList} setType={setType} />
+      </div>
+      <div className='pokemans'>
+        {pokemonList.map((aPokemon) => (
+          <Pokemon key={aPokemon.id} { ...aPokemon } />
+        ))} 
+      </div>
+    </div>
   );
-//   setPokemon(fetchPokemon);
+//setPokemon(fetchPokemon);
 }

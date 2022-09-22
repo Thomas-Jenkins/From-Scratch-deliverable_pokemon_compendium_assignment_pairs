@@ -1,8 +1,28 @@
+.main {
+  display: grid;
+  grid-template-rows: 50px auto;
+}
+.nav {
+  display: flex;
+  justify-content: center;
+}
+.nav select {
+  margin: 1px;
+  height: 40px;
+  width: 90px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.pokemans {
+  display: flex;
+  flex-wrap: wrap;
+}
 .lds-ripple {
     display: inline-block;
     position: relative;
     width: 80px;
     height: 80px;
+    align-items: center;
   }
   .lds-ripple div {
     position: absolute;

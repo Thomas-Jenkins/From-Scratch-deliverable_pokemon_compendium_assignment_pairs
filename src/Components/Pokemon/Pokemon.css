@@ -1,0 +1,11 @@
+.poke-card {
+    border: 1px solid black;
+    max-width: 60px;
+    margin: 5px;
+}
+.poke-card img {
+    max-width: 50px;
+}
+.title {
+    font-size: x-small;
+}
