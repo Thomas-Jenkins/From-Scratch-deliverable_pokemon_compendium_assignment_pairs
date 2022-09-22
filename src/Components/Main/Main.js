@@ -4,11 +4,13 @@ import { fetchPokemon, fetchPokeTypes } from '../../services/fetch-utils';
 import useFilter from '../Filter/Filter';
 import Pokemon from '../Pokemon/Pokemon';
 import Select from '../Select/Select';
+import './Main.css';
 
 
 export default function Main() {
-  const { pokemonList, type, typeList, setType } = usePokemon();
-  console.log('temp1', pokemonList);
+  const { loading, pokemonList, type, typeList, setType } = usePokemon();
+  if (loading) return <div className='lds-ripple'><div></div><div></div></div>;
+  // console.log('temp1', pokemonList);
 //   let temp = usePokemon();
   // {pokemonList.map((aPokemon) => 
   //   console.log(aPokemon)

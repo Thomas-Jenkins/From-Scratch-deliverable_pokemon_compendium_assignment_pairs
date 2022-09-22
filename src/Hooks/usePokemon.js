@@ -5,19 +5,24 @@ export default function usePokemon() {
   const [pokemonList, setPokemonList] = useState([]);
   const [type, setType] = useState('All');
   const [typeList, setTypeList] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    
     const loadData = async () => {
       try {
+        // setLoading(true);
         const data = await fetchPokemon(type);
         setPokemonList(data);
+        setLoading(false);
       } catch (e) {
     // eslint-disable-next-line no-console
         console.error(e);
       }
     };
-  
+      
     loadData();
+    
   }, [type]);
   
   useEffect(() => {
@@ -32,5 +37,5 @@ export default function usePokemon() {
     getData();
 
   }, []); 
-  return { pokemonList, type, typeList, setType };
+  return { pokemonList, type, typeList, setType, loading };
 }
