@@ -2,10 +2,66 @@
     border: 1px solid black;
     max-width: 60px;
     margin: 5px;
+    border-radius: 5px;
+    
 }
 .poke-card img {
     max-width: 50px;
 }
 .title {
     font-size: x-small;
+}
+.bug {
+    background-color: lightgreen;
+}
+.dark {
+    background-color: darkslateblue;
+}
+.dragon {
+    background-color: red;
+}
+.electric {
+    background-color: yellow;
+}
+.fairy {
+    background-color: pink;
+}
+.fighting {
+    background-color: brown;
+}
+.fire {
+    background-color: orange;
+}
+.flying {
+    background-color:chocolate;
+}
+.ghost {
+    background-color:darkmagenta;
+}
+.grass {
+    background-color: green;
+}
+.ground {
+    background-color: darkkhaki;
+}
+.ice {
+    background-color: lightblue;
+}
+.normal {
+    background-color: white;
+}
+.poison {
+    background-color: darkviolet;
+}
+.psychic {
+    background-color: mediumpurple;
+}
+.rock {
+    background-color: lightslategrey;
+}
+.steel {
+    background-color: steelblue;
+}
+.water {
+    background-color:aqua;
 }
