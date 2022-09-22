@@ -19,6 +19,9 @@
 .nav button {
   height: 40px;
 }
+.nav label {
+  padding-right: 5px;
+}
 
 .nav select {
   margin: 1px;
