@@ -6,6 +6,8 @@ export default function usePokemon() {
   const [type, setType] = useState('All');
   const [typeList, setTypeList] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [inputValue, setInputValue] = useState('');
+  const [nameFilter, setNameFilter] = useState('');
 
   useEffect(() => {
     
@@ -37,5 +39,5 @@ export default function usePokemon() {
     getData();
 
   }, []); 
-  return { pokemonList, type, typeList, setType, loading };
+  return { pokemonList, setPokemonList, type, typeList, setType, loading, inputValue, setInputValue, nameFilter, setNameFilter };
 }
