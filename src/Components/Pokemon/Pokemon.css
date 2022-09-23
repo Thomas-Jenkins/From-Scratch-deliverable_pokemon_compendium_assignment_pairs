@@ -1,0 +1,78 @@
+.poke-card {
+    /* border: 1px solid black; */
+    width: 120px;
+    margin: 5px;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+.poke-card img {
+    max-width: 100px;
+}
+.title {
+  font-size: small;  
+  text-transform: uppercase;
+}
+
+.type {
+  text-transform: capitalize;
+  margin-bottom: 5px;
+}
+
+.bug {
+    background-color: lightgreen;
+}
+.dark {
+    background-color: darkslateblue;
+}
+.dragon {
+    background-color: red;
+}
+.electric {
+    background-color: yellow;
+}
+.fairy {
+    background-color: pink;
+}
+.fighting {
+    background-color: brown;
+}
+.fire {
+    background-color: orange;
+}
+.flying {
+    background-color:chocolate;
+}
+.ghost {
+    background-color:darkmagenta;
+}
+.grass {
+    background-color: green;
+}
+.ground {
+    background-color: darkkhaki;
+}
+.ice {
+    background-color: lightblue;
+}
+.normal {
+    background-color: rgb(250, 239, 239);
+}
+.poison {
+    background-color: darkviolet;
+}
+.psychic {
+    background-color: mediumpurple;
+}
+.rock {
+    background-color: lightslategrey;
+}
+.steel {
+    background-color: steelblue;
+}
+.water {
+    background-color:aqua;
+}
