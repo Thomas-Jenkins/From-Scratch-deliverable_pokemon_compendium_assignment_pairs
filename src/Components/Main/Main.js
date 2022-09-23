@@ -5,12 +5,12 @@ import SearchPokemon from '../Search/Search';
 import './Main.css';
 
 export default function Main() {
-  const { loading, pokemonList, setPokemonList, typeList, setType, inputValue, setInputValue, type } = usePokemon();
+  const { loading, pokemonList, setPokemonList, typeList, setType, inputValue, setInputValue, type, setLoading } = usePokemon();
   if (loading) return <div className='lds-ripple'><div></div><div></div></div>;
   return (
     <div className='main'>
       <div className="nav">
-        <SearchPokemon type={type} inputValue={inputValue} setInputValue={setInputValue} setPokemonList={setPokemonList}/>
+        <SearchPokemon type={type} inputValue={inputValue} setInputValue={setInputValue} setPokemonList={setPokemonList} setLoading={setLoading} />
         <Select typeList={typeList} setType={setType} />
       </div>
       <div className='pokemans'>

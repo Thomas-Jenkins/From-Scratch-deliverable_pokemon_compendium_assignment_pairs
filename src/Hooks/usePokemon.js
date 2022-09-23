@@ -10,6 +10,7 @@ export default function usePokemon() {
   useEffect(() => {
     const loadData = async () => {
       try {
+        setLoading(true);
         const data = await fetchPokemon(type);
         setPokemonList(data);
         setLoading(false);
@@ -34,5 +35,5 @@ export default function usePokemon() {
     getData();
   }, []); 
 
-  return { pokemonList, setPokemonList, type, typeList, setType, loading, inputValue, setInputValue };
+  return { pokemonList, setPokemonList, type, typeList, setType, loading, setLoading, inputValue, setInputValue };
 }
